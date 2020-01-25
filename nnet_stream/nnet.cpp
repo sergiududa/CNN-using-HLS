@@ -60,7 +60,7 @@ void conv_layer1(hls::stream<float24_t> &out, hls::stream<float24_t> &in,
 				out << relu(sum + bias[filter]);
 			}
 
-			/// IF this happens we can read stuff
+
 			if ((j + CONV1_STRIDE < (IMAGE_SIZE - CONV1_KERNEL_SIZE + 1))) {
 				conv_layer1_label1: for (int p = 0; p < IMAGE_CHANNELS; p++)
 					if (in.empty() == 0) {
@@ -127,7 +127,7 @@ void conv_layer2(hls::stream<float24_t> &out, hls::stream<float24_t> &in,
 				out << relu(sum + bias[filter]);
 			}
 
-			/// IF this happens we can read stuff
+
 			if ((j + CONV2_STRIDE < (P1_SIZE - CONV2_KERNEL_SIZE + 1))) {
 				conv_layer2_label3: for (int p = 0; p < P1_CHANNELS; p++)
 					if (in.empty() == 0) {
