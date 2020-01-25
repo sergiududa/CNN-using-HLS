@@ -12,5 +12,5 @@ Each directory contains gen_proj.tcl that can be used to setup te Vivado HLS env
 
 To generate the project for the main CNN implemetion follow the following steps:
 1) Clone the repo: git clone https://github.com/sergiududa/CNN-using-HLS.git
-2) Go the nnet_stream directory: cd nnet_stream/
+2) Go the nnet_stream directory: CNN-using-HLS/nnet_stream/
 3) Generate the project: vivado_hls -f gen_proj.tcl
