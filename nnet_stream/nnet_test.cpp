@@ -1,3 +1,24 @@
+/******************************************************************************
+ * (C) Copyright 2020 AMIQ Consulting
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * NAME:        nnet_test.cpp
+ * PROJECT:     nnet_stream
+ * Description: Basic test that sends an image to the Convolutional Neural Network
+ *              and checks that the output matches the python reference
+ *******************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "headers/defines.h"
@@ -33,8 +54,6 @@ int main()
 	for(i = 0; i < FC3_ACT_SIZE; i++) {
 		FC3_out>>fc_layer3_out[i];
 	}
-
-	//FILE* asda = fopen("asdasd","w");
 
 	FILE* fc_layer3_content = fopen("../../../../ref/fc_layer3_py.out","r");
 	if(fc_layer3_content == NULL)
