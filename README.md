@@ -2,7 +2,7 @@
 
 ### Directory structure: ###
   This package contains the following directories:
-   *   modules/ - directory used for the development and testing of individual HLS functions that are for the CNN implementation
+   *   modules/ - directory used for the development and testing of individual HLS functions that are used for the CNN implementation
    *   nnet_stream/   - directory containing the C++ source and testbench
    *   py/        - directory containing the python code used to train the neural network
 
@@ -28,5 +28,6 @@ Python libraries
 
 https://www.amiq.com/consulting/2018/12/14/how-to-implement-a-convolutional-neural-network-using-high-level-synthesis/
 
+### License ###
 
-**TODO** Ask about directive.tcl
+The application is available for free under the Apache License 2 We choosed this type of license to allow ANYONE use the materials as they please.
